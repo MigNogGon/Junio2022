@@ -51,4 +51,5 @@ jobs:
       - name: Probando el código
         run: |  
           echo mignoggon
+          chmod +x gradlew   
           ./gradlew test
