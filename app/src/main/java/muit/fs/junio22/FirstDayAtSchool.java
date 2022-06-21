@@ -1,7 +1,5 @@
-/**
- * Clase a probar en el código ejemplo para el control de junio de 2022
- */
 package muit.fs.junio22;
+
 
 /**
  * @author Isabel Román
@@ -26,11 +24,10 @@ public class FirstDayAtSchool {
 	}
 
 	public void addThings(String thingName, int number) {
-		int things = 1;
 		if (schoolbag.containsKey(thingName)) {
-			things = things + schoolbag.get(thingName).intValue();
+			number = number + schoolbag.get(thingName).intValue();
 		}
-		schoolbag.put(thingName, Integer.valueOf(things));
+		schoolbag.put(thingName, number);
 	}
 
 	public int getNumberOf(String thingName) {
